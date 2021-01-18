@@ -1,0 +1,35 @@
+a:link,
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+
+.navbar {
+	background-color: black;
+	color: white;
+	padding: 0 20px 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.heading-primary {
+	text-transform: uppercase;
+	
+}
+
+.links {
+	width: 25%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-item {
+	text-transform: uppercase;
+	
+}
