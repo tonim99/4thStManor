@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>4th Street Manor</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="#">
-                <h1 class="heading-primary">4th Street Manor</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3558b222be.js" crossorigin="anonymous"></script>
+        <title>4th Street Manor</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <a href="#"class="navigation__logo">
+                4th Street Manor
             </a>
-            <div class="links">
-                <a href="#" class="navbar-item">About Us</a>
-                <a href="#" class="navbar-item">Events</a>
-                <a href="#" class="navbar-item">Song List</a>
+            <div class="navigation__links">
+                <a href="#" class="navigation__item">About Us</a>
+                <a href="#" class="navigation__item">Events</a>
+                <a href="#" class="navigation__item">Song List</a>
+            </div>
+            <div class="navigation__bars"><i class="fas fa-bars fa-3x"></i></div>
+            <div class="navigation__dropdown" id="navigation__dropdown">
+                <div class="navigation__link-container">
+                    <a href="#" class="navigation__link">About Us</a>
+                    <a href="#" class="navigation__link">Events</a>
+                    <a href="#" class="navigation__link">Song List</a>
+                </div>
             </div>
         </nav>
-        <section>
-
-        </section>
-    </header>
-</body>
+        <header class="header">
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">4th Street Manor</span>
+                    <span class="heading-primary--sub">Torch Songs, Love Ballads & More</span>
+                </h1>
+                <a href="#" class="btn btn--white">Meet Us</a>
+            </div>
+        </header>
+    </body>
 </html>

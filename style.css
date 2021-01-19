@@ -1,35 +1,221 @@
-a:link,
-a:visited {
-	color: white;
-	text-decoration: none;
+/* Variables */
+:root {
+    --cursive-font: 'Dancing Script', cursive;
+    --main-font: 'Open Sans', sans-serif;
+    --main-color-dark: #030a4b;
+    --main-text-color: #ffffff;
+    --main-text-color-transparent: rgba(255, 255, 255, 0.6);
+    --gradient-main: linear-gradient(
+			to right bottom,
+			rgba(146, 156, 205, 0.749),
+			rgba(3, 10, 75, 0.9)
+        );
+    --smooth-transition: transform 0.3s ease;
+    --shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    --hover-scale: scale(1.1);
 }
 
-a:hover,
-a:active {
-	text-decoration: underline;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.navbar {
-	background-color: black;
-	color: white;
-	padding: 0 20px 0 20px;
-	display: flex;
-	justify-content: space-between;
+html {
+	font-size: 62.5%;
 }
 
-.heading-primary {
-	text-transform: uppercase;
-	
+:link, :visited {
+    text-decoration: none;
 }
 
-.links {
-	width: 25%;
+:active {
+    outline: none;
+}
+
+.header {
+	height: 85vh;
+	background-image: var(--gradient-main),
+		url(./assets/images/4thsthero-lg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.navigation {
+	height: 8rem;
+	background-color: var(--main-color-dark);
+	color: var(--main-text-color);
+	padding: 0 2rem 0 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.navbar-item {
+.navigation__logo:link,
+.navigation__logo:visited {
+	font-size: 3rem;
+	color: var(--main-text-color);
+	font-weight: 700;
+	font-family: var(--cursive-font);
+	transition: var(--smooth-transition);
+}
+
+.navigation__logo:hover,
+.navigation__logo:active {
+	transform: var(--hover-scale)
+}
+
+.navigation__item {
 	text-transform: uppercase;
-	
+	transition: var(--smooth-transition);
+}
+
+.navigation__item:link,
+.navigation__item:visited {
+	color: var(--main-text-color);
+}
+
+.navigation__item:hover,
+.navigation__item:active {
+	transform: var(--hover-scale)
+}
+
+.navigation__links {
+	display: none;
+}
+
+.navigation__dropdown {
+	background-image: var(--gradient-main);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	display: none;
+}
+
+.navigation__link-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+	color: var(--main-text-color);
+	font-size: 2.4rem;
+	padding: 2rem;
+	transition: var(--smooth-transition);
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+	transform: var(--hover-scale)
+}
+
+.header__text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.heading-primary {
+	color: var(--main-text-color);
+}
+
+.heading-primary--main {
+	display: block;
+	font-family: var(--cursive-font);
+	font-size: 5rem;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.heading-primary--sub {
+	margin-top: 3.5rem;
+	display: block;
+	font-size: 2rem;
+	font-family: var(--main-font);
+	font-weight: 400;
+	line-height: 3rem;
+	margin-bottom: 3.5rem;
+	font-style: italic;
+}
+.btn {
+	transition: var(--smooth-transition);
+}
+
+.btn:link,
+.btn:visited {
+	padding: 1.25rem 3.5rem;
+	display: inline-block;
+	border-radius: 1rem;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: var(--shadow)
+}
+
+.btn:active {
+	transform: translateY(1px);
+}
+
+.btn--white {
+	background-color: var(--main-text-color-transparent);
+	color:var(--main-color-dark);
+	font-size: 1.75rem;
+	font-family: var(--main-font);
+}
+@media only screen and (min-width: 60rem) {
+    .navigation__bars {
+		display: none;
+	}
+
+	.navigation__links {
+		width: 25%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.6rem;
+		font-family: var(--main-font);
+    }
+    
+	.header__text-box {
+		top: 45%;
+	}
+
+	.heading-primary--main {
+		font-size: 7rem;
+	}
+
+	.heading-primary--sub {
+		margin-top: 1.25rem;
+		font-size: 2.2rem;
+	}
+}
+
+@media only screen and (min-width: 105rem) {
+
+    .navigation__links {
+        font-size: 2rem;
+    }
+
+	.heading-primary--main {
+		font-size: 9rem;
+	}
+
+	.heading-primary--sub {
+		margin-top: 2rem;
+		font-size: 2.7rem;
+		letter-spacing: 0.3rem;
+	}
 }
