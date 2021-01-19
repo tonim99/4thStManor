@@ -1,18 +1,18 @@
 /* Variables */
 :root {
-    --cursive-font: 'Dancing Script', cursive;
-    --main-font: 'Open Sans', sans-serif;
-    --main-color-dark: #030a4b;
-    --main-text-color: #ffffff;
-    --main-text-color-transparent: rgba(255, 255, 255, 0.6);
-    --gradient-main: linear-gradient(
-			to right bottom,
-			rgba(146, 156, 205, 0.749),
-			rgba(3, 10, 75, 0.9)
-        );
-    --smooth-transition: transform 0.3s ease;
-    --shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    --hover-scale: scale(1.1);
+	--cursive-font: 'Dancing Script', cursive;
+	--main-font: 'Open Sans', sans-serif;
+	--main-color-dark: #030a4b;
+	--main-text-color: #ffffff;
+	--main-text-color-transparent: rgba(255, 255, 255, 0.6);
+	--gradient-main: linear-gradient(
+		to right bottom,
+		rgba(146, 156, 205, 0.749),
+		rgba(3, 10, 75, 0.9)
+	);
+	--smooth-transition: transform 0.3s ease;
+	--shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	--hover-scale: scale(1.1);
 }
 
 * {
@@ -25,18 +25,18 @@ html {
 	font-size: 62.5%;
 }
 
-:link, :visited {
-    text-decoration: none;
+:link,
+:visited {
+	text-decoration: none;
 }
 
 :active {
-    outline: none;
+	outline: none;
 }
 
 .header {
 	height: 85vh;
-	background-image: var(--gradient-main),
-		url(./assets/images/4thsthero-lg.jpg);
+	background-image: var(--gradient-main), url(./assets/images/4thsthero-lg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -64,7 +64,7 @@ html {
 
 .navigation__logo:hover,
 .navigation__logo:active {
-	transform: var(--hover-scale)
+	transform: var(--hover-scale);
 }
 
 .navigation__item {
@@ -79,7 +79,7 @@ html {
 
 .navigation__item:hover,
 .navigation__item:active {
-	transform: var(--hover-scale)
+	transform: var(--hover-scale);
 }
 
 .navigation__links {
@@ -117,7 +117,7 @@ html {
 
 .navigation__link:hover,
 .navigation__link:active {
-	transform: var(--hover-scale)
+	transform: var(--hover-scale);
 }
 
 .header__text-box {
@@ -163,7 +163,7 @@ html {
 
 .btn:hover {
 	transform: translateY(-3px);
-	box-shadow: var(--shadow)
+	box-shadow: var(--shadow);
 }
 
 .btn:active {
@@ -172,12 +172,12 @@ html {
 
 .btn--white {
 	background-color: var(--main-text-color-transparent);
-	color:var(--main-color-dark);
+	color: var(--main-color-dark);
 	font-size: 1.75rem;
 	font-family: var(--main-font);
 }
-@media only screen and (min-width: 60rem) {
-    .navigation__bars {
+@media only screen and (min-width: 60em) {
+	.navigation__bars {
 		display: none;
 	}
 
@@ -187,8 +187,8 @@ html {
 		justify-content: space-between;
 		font-size: 1.6rem;
 		font-family: var(--main-font);
-    }
-    
+	}
+
 	.header__text-box {
 		top: 45%;
 	}
@@ -203,11 +203,14 @@ html {
 	}
 }
 
-@media only screen and (min-width: 105rem) {
+@media only screen and (min-width: 105em) {
+	.navigation__logo:link {
+		font-size: 4rem;
+	}
 
-    .navigation__links {
-        font-size: 2rem;
-    }
+	.navigation__links {
+		font-size: 2rem;
+	}
 
 	.heading-primary--main {
 		font-size: 9rem;
