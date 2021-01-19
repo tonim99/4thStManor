@@ -86,6 +86,14 @@ html {
 	display: none;
 }
 
+.navigation__bars {
+    transition: var(--smooth-transition);
+}
+
+.navigation__bars:hover {
+    transform: var(--hover-scale);
+}
+
 .navigation__dropdown {
 	background-image: var(--gradient-main);
 	height: 100vh;
