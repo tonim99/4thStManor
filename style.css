@@ -7,7 +7,7 @@
 	--main-text-color-transparent: rgba(255, 255, 255, 0.6);
 	--gradient-main: linear-gradient(
 		to right bottom,
-		rgba(146, 156, 205, 0.749),
+		rgba(146, 156, 205, 0.75),
 		rgba(3, 10, 75, 0.9)
 	);
 	--smooth-transition: transform 0.3s ease;
@@ -24,6 +24,11 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: var(--main-color-dark);
+	color: var(--main-text-color);
 }
 
 :link,
@@ -237,6 +242,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .heading-secondary {
@@ -261,9 +267,11 @@ html {
 }
 
 .about__bio {
+    width: 90%;
     padding: 1.5rem;
     display: flex;
     margin: 1.5rem 0;
+    background-color: rgba(153, 153, 153, 0.31);
 }
 
 .about__text {
