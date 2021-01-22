@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-	--cursive-font: 'Dancing Script', cursive;
+	--cursive-font: 'Alex Brush', cursive;
 	--main-font: 'Open Sans', sans-serif;
 	--main-color-dark: #030a4b;
 	--main-text-color: #ffffff;
@@ -150,7 +150,7 @@ html {
 	display: block;
 	font-family: var(--cursive-font);
 	font-size: 5rem;
-	font-weight: 700;
+	font-weight: 600;
 	white-space: nowrap;
 }
 
