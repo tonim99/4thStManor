@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/3558b222be.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
         <title>4th Street Manor</title>
     </head>
     <body>
@@ -17,18 +18,20 @@
                 4th Street Manor
             </a>
             <div class="navigation__links">
-                <!-- <a href="#about" class="navigation__item">About</a> -->
-                <a href="#" class="navigation__item">Events</a>
-                <a href="#" class="navigation__item">Repertoire</a>
-                <a href="#" class="navigation__item">Contact</a>
+                <a href="#events" class="navigation__item">Events</a>
+                <a href="#gallery" class="navigation__item">Gallery</a>
+                <a href="#repertoire" class="navigation__item">Repertoire</a>
+                <a href="#footer" class="navigation__item">Contact</a>
             </div>
-            <div class="navigation__bars"><i class="fas fa-bars fa-3x"></i></div>
+            <div class="navigation__bars"><i class="fas fa-bars fa-3x" onclick="toggleMenu('navigation__dropdown')"></i></div>
             <div class="navigation__dropdown" id="navigation__dropdown">
+                <div class="navigation__times"><i class="fas fa-times fa-3x" onclick="hideMenu('navigation__dropdown')"></i></div>
                 <div class="navigation__link-container">
-                    <a href="#" class="navigation__link">About</a>
-                    <a href="#" class="navigation__link">Events</a>
-                    <a href="#" class="navigation__link">Repertoire</a>
-                    <a href="#" class="navigation__item">Contact</a>
+                    <a href="#about" class="navigation__link" onclick="hideMenu('navigation__dropdown')">About</a>
+                    <a href="#events" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Events</a>
+                    <a href="#gallery" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Gallery</a>
+                    <a href="#repertoire" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Repertoire</a>
+                    <a href="#footer" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Contact</a>
                 </div>
             </div>
         </nav>
@@ -56,10 +59,91 @@
                 <div class="about__bio">
                     <img src="./assets/images/LK--1b.jpg" alt="Larry" class="img">
                     <p class="about__text">
-                       Larry Kent (keys, guitar, vocals) also plays for Broken Angel, a popular rock and country cover band that performs throughout Virginia. He also plays keys and sings with Gabby Haze, an Americana band that performs classic rock, folk-rock and original songs throughout Virginia.
+                    Larry Kent (keys, guitar, vocals) is also a member of Broken Angel, a rock cover band, and Gabby Haze, an Americana band that performs classic rock, folk-rock and originals. He has also been engaged for guest appearances with Cherry Red and Abbey Road (Rolling Stones and Beatles cover bands).
                     </p>
                 </div>
             </div>
         </section>
+        <section class="events" id="events">
+                <ul class="event__heading">
+                    <li class="date">
+                        Date
+                    </li>
+                    <li class="venue">
+                        Venue
+                    </li>
+                </ul>
+            <div class="event">
+                <div class="date">April 6, 2021 <br> 7:00 pm</div>
+                <div class="venue">The Lodge at Old Trail <br> Private Event</div>
+            </div>
+            <div class="event">
+                <div class="date">July 15, 2021 <br> 6:00 pm</div>
+                <div class="venue">Greencroft Club <br> Open to the Public</div>
+            </div>
+            <div class="event">
+                <div class="date">August 10, 2021 <br> 7:00 pm</div>
+                <div class="venue">The Lodge at Old Trail <br> Private Event</div>
+            </div>
+            <div class="event">
+                <div class="date">September 23, 2021 <br> 6:00 pm</div>
+                <div class="venue">Greencroft Club <br> Open to the Public</div>
+            </div>
+            <div class="event">
+                <div class="date">November 9, 2021 <br> 7:00 pm</div>
+                <div class="venue">The Lodge at Old Trail <br> Private Event</div>
+            </div> 
+        </section>
+        <section class="gallery" id="gallery">
+            <video controls preload="auto" width="600" src="./assets/videos/Guilty2a.mp4"></video>
+            <video controls preload="auto" width="600" src="./assets/videos/ThingsWeSaid.mp4"></video>
+        </section>
+        <section class="repertoire">
+            <h3 class="heading-third">Partial Song List</h3>
+            <div class="song__lists">
+
+                <ul class="songs">
+                    <li class="song">Over You</li>
+                    <li class="song">Imagine</li>
+                    <li class="song">Mona Lisas &amp; Mad Hatters</li>
+                    <li class="song">The One That Got Away</li>
+                    <li class="song">Blackbird</li>
+                    <li class="song">Ordinary World</li>
+                    <li class="song">I'm In Here</li>
+                    <li class="song">Dust In the Wind</li>
+                    <li class="song">Eavesdrop</li>
+                    <li class="song">Morning Has Broken (Piano Solo)</li>
+                    <li class="song">Guilty</li>
+                    <li class="song">Black Horse &amp; a Cherry Tree</li>
+                    <li class="song">Eleanor Rigby (Piano Solo)</li>
+                </ul>
+                <ul class="artists">
+                    <li class="artist">Beth Hart</li>
+                    <li class="artist">John Lennon</li>
+                    <li class="artist">Elton John</li>
+                    <li class="artist">The Civil Wars</li>
+                    <li class="artist">The Beatles</li>
+                    <li class="artist">Duran Duran</li>
+                    <li class="artist">Sia</li>
+                    <li class="artist">Kansas</li>
+                    <li class="artist">The Civil Wars</li>
+                    <li class="artist">Rick Wakeman</li>
+                    <li class="artist">Bonnie Raitt</li>
+                    <li class="artist">KT Tunstall</li>
+                    <li class="artist">Rick Wakeman</li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer" id="footer">
+            <h4 class="heading__four">Contact Us</h4>
+            <ul class="contact">
+                <li class="contact__links">
+                    <a href="mailto:4thStManor@gmail.com" class="link">Email</a>
+                </li>
+                <li class="contact__links">
+                    <a href="tel:813-494-4709" class="link">Call (813)494-4709</a>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
