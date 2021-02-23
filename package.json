@@ -1,0 +1,23 @@
+{
+  "name": "4thstreetmanor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonim99/4thStManor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonim99/4thStManor/issues"
+  },
+  "homepage": "https://github.com/tonim99/4thStManor#readme"
+}

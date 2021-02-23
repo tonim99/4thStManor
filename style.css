@@ -3,7 +3,8 @@
 	--font-cursive: 'Alex Brush', cursive;
 	--font-main: 'Open Sans', sans-serif;
 	--color-main-dark: #030a4b;
-	--color-text: #ffffff;
+	--color-text: #f5f5f8;
+	--color-text-dark: #2c2c36;
 	--color-text-transparent: rgba(255, 255, 255, 0.6);
 	--gradient-main: linear-gradient(
 		to right bottom,
@@ -29,6 +30,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+	background-color: var(--color-text);
 }
 
 ::selection {
@@ -208,18 +210,7 @@ html {
 	font-family: var(--font-main);
 }
 @media only screen and (min-width: 60em) {
-	.navigation__bars {
-		display: none;
-	}
-
-	.navigation__links {
-		width: 25%;
-		display: flex;
-		justify-content: space-between;
-		font-size: 1.6rem;
-		font-family: var(--font-main);
-	}
-
+	
 	.header__text-box {
 		top: 45%;
 	}
@@ -233,7 +224,19 @@ html {
 		font-size: 2.2rem;
 	}
 }
+@media only screen and (min-width: 80em) {
+	.navigation__bars {
+		display: none;
+	}
 
+	.navigation__links {
+		width: 25%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.6rem;
+		font-family: var(--font-main);
+	}
+}
 @media only screen and (min-width: 105em) {
 	.navigation__logo:link {
 		font-size: 4rem;
@@ -260,6 +263,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+	max-width: 90rem;
+	margin: 0 auto;
 }
 
 .heading-secondary {
@@ -276,6 +281,7 @@ html {
 
 .about__content-text {
     font-family: var(--font-main);
+	color: var(--color-text-dark);
     margin-top: 4rem;
     padding: 0 1rem;
     font-size: 1.8rem;
@@ -284,16 +290,18 @@ html {
 }
 
 .about__bio {
-    width: 90%;
+    width: 95%;
+	max-width: 90rem;
     padding: 1.5rem;
     display: flex;
     margin: 1.5rem 0;
-    background-color: rgba(153, 153, 153, 0.31);
+    background-color: rgba(153, 153, 153, 0.3);
 }
 
 .about__text {
     font-family: var(--font-main);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+	color: var(--color-text-dark);
     align-self: center;
     line-height: 1.9rem;
 }
@@ -308,15 +316,11 @@ html {
     transition: var(--smooth-transition);
 }
 
-/* .img:hover {
-    transform: scale(1.05);
-    box-shadow: var(--shadow);
-} */
 .events {
 	background-image: var(--gradient-opaque);
 	margin-top: 6rem;
 	padding: 6rem 0;
-
+	
 	/* margin: 1.5rem; */
 }
 .event__heading {
@@ -331,16 +335,21 @@ html {
 	border-bottom: .5rem solid var(--color-text);
 	display: grid;
 	grid-template-columns: 2fr 2fr;
+	max-width: 90rem;
+	margin: 0 auto;
 }
 
 .event {
+	width: 95vw;
 	font-size: 1.75rem;
 	font-family: var(--font-main);
 	margin: 1.5rem;
 	padding-bottom: 1.5rem;
 	display: grid;
 	grid-template-columns: 2fr 2fr;
-	color: var(--color-text)
+	color: var(--color-text);
+	max-width: 90rem;
+	margin: 0 auto;
 }
 
 .event:not(:last-child) {
@@ -348,12 +357,25 @@ html {
 }
 
 .gallery {
+	overflow: hidden;
 	margin: 6rem auto;
+	max-width: 130rem;
 }
 
+video {
+	display: block;
+	margin: 2rem auto;
+}
+
+@media only screen and (min-width: 65em) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 .repertoire {
 	background-image: var(--gradient-opaque);
-	color: white;
+	color: var(--color-text);
 	padding: 6rem 1.5rem;
 	font-size: 1.75rem;
 	font-family: var(--font-main);	
@@ -367,6 +389,8 @@ html {
     transition: var(--smooth-transition);
 }
 .song__lists {
+	margin: 0 auto;
+	max-width: 100rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
