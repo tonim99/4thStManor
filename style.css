@@ -388,18 +388,12 @@ video {
     font-size: 5rem;
     transition: var(--smooth-transition);
 }
-.song__lists {
-	margin: 0 auto;
-	max-width: 100rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.songs {
+
+.song {
 	list-style: none;
+	padding: .5rem;
 }
-.artists {
-	list-style: none;
-}
+
 .footer {
 	height: 25rem;
 	padding: 6rem;
