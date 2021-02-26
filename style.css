@@ -373,7 +373,7 @@ video {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-.repertoire {
+.section__song-list {
 	background-image: var(--gradient-opaque);
 	color: var(--color-text);
 	padding: 6rem 1.5rem;
