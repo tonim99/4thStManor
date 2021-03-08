@@ -161,26 +161,24 @@ const events = [
 
 const toggleMenu = (id) => {
     const menu = document.getElementById(id);
-    menu.style.display = "none" ? "block" : "none"
-}
-
-const hideMenu = (id) => {
-    const menu = document.getElementById(id);
-    menu.style.display = "block" ? "none" : "block"
+	menu.style.display =
+	menu.style.display == "none" ? "block" : "none";
 }
 
 function createSongList(data) {
 	const songList = document.getElementById('song__lists');
-	const list = document.createElement('ul');
-	console.log(list);
 	songs.forEach((song) => {
-		const li = document.createElement('li');
-		const title = song.title;
-		const artist = song.artist;
-		li.classList.add('song');
-		li.innerHTML = title + ' - ' + artist;
-		list.appendChild(li);
+		const songDiv = document.createElement('div')
+		const titleDiv = document.createElement('div')
+		const artistDiv = document.createElement('div');
+		songDiv.classList.add('song');
+		titleDiv.classList.add('title')
+		artistDiv.classList.add('artist')
+		songDiv.appendChild(titleDiv)
+		songDiv.appendChild(artistDiv)
+		titleDiv.innerHTML = song.title
+		artistDiv.innerHTML = song.artist
+		songList.appendChild(songDiv);
 	});
-	songList.appendChild(list);
 }
 createSongList(songs);
