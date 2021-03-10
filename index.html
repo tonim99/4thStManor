@@ -33,11 +33,11 @@
                     </i>
                 </div>
                 <div class="navigation__link-container">
-                    <a href="#about" class="navigation__link" onclick="hideMenu('navigation__dropdown')">About</a>
-                    <a href="#events" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Events</a>
-                    <a href="#gallery" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Gallery</a>
-                    <a href="#repertoire" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Repertoire</a>
-                    <a href="#footer" class="navigation__link" onclick="hideMenu('navigation__dropdown')">Contact</a>
+                    <a href="#about" class="navigation__link" onclick="toggleMenu('navigation__dropdown')">About</a>
+                    <a href="#events" class="navigation__link" onclick="toggleMenu('navigation__dropdown')">Events</a>
+                    <a href="#gallery" class="navigation__link" onclick="toggleMenu('navigation__dropdown')">Gallery</a>
+                    <a href="#repertoire" class="navigation__link" onclick="toggleMenu('navigation__dropdown')">Repertoire</a>
+                    <a href="#footer" class="navigation__link" onclick="toggleMenu('navigation__dropdown')">Contact</a>
                 </div>
             </div>
         </nav>
@@ -71,34 +71,14 @@
             </div>
         </section>
         <section class="events" id="events">
-                <ul class="event__heading">
-                    <li class="date">
-                        Date
-                    </li>
-                    <li class="venue">
-                        Venue
-                    </li>
-                </ul>
-            <div class="event">
-                <div class="date">April 6, 2021 <br> 7:00 pm</div>
-                <div class="venue">The Lodge at Old Trail <br> Private Event</div>
+            <div class="event__heading">
+                <div class="date">
+                    Date
+                </div>
+                <div class="venue">
+                    Venue
+                </div>
             </div>
-            <div class="event">
-                <div class="date">July 15, 2021 <br> 6:00 pm</div>
-                <div class="venue">Greencroft Club <br> Open to the Public</div>
-            </div>
-            <div class="event">
-                <div class="date">August 10, 2021 <br> 7:00 pm</div>
-                <div class="venue">The Lodge at Old Trail <br> Private Event</div>
-            </div>
-            <div class="event">
-                <div class="date">September 23, 2021 <br> 6:00 pm</div>
-                <div class="venue">Greencroft Club <br> Open to the Public</div>
-            </div>
-            <div class="event">
-                <div class="date">November 9, 2021 <br> 7:00 pm</div>
-                <div class="venue">The Lodge at Old Trail <br> Private Event</div>
-            </div> 
         </section>
         <section class="gallery" id="gallery">
             <video controls preload="auto" width="550" src="./assets/videos/Guilty.mp4"></video>

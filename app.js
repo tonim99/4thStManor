@@ -131,31 +131,31 @@ const events = [
 		date: 'April 6, 2021',
 		time: '7:00 pm',
 		venue: 'The Lodge at Old Trail',
-		public: false,
+		public: 'Private Event',
 	},
 	{
 		date: 'July 15, 2021',
 		time: '6:00 pm',
 		venue: 'Greencroft Club',
-		public: true,
+		public: 'Open to the Public',
 	},
 	{
 		date: 'August 10, 2021',
 		time: '7:00 pm',
 		venue: 'The Lodge at Old Trail',
-		public: false,
+		public: 'Private Event',
 	},
 	{
 		date: 'September 23, 2021',
 		time: '6:00 pm',
 		venue: 'Greencroft Club',
-		public: true,
+		public: 'Open to the Public',
 	},
 	{
 		date: 'November 9, 2021',
 		time: '7:00 pm',
 		venue: 'The Lodge at Old Trail',
-		public: false,
+		public: 'Private Event',
 	},
 ];
 
@@ -182,3 +182,21 @@ function createSongList(data) {
 	});
 }
 createSongList(songs);
+
+function createEventList(data) {
+	const eventList = document.getElementById('events');
+	events.forEach((event) => {
+		const eventDiv = document.createElement('div');
+		const dateDiv = document.createElement('div');
+		const venueDiv = document.createElement('div');
+		eventDiv.classList.add('event');
+		dateDiv.classList.add('date');
+		venueDiv.classList.add('venue');
+		eventDiv.appendChild(dateDiv);
+		eventDiv.appendChild(venueDiv);
+		dateDiv.innerHTML = event.date + '<br>' + event.time;
+		venueDiv.innerHTML = event.venue + '<br>' + event.public;
+		eventList.appendChild(eventDiv);
+	});
+}
+createEventList(events);
