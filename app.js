@@ -1,8 +1,3 @@
-// const eventsUrl =
-// 	'https://spreadsheets.google.com/feeds/cells/1nzfnHjkdc41nBLJnMAjXmWc96OnL_W74xAOPnLvhFik/1/public/full?alt=json';
-
-//show + hide menu functions
-//why did I have to write two? It looks like the ternary is not working... 
 const songs = [
 	{
 		title: 'Over You',
@@ -161,8 +156,7 @@ const events = [
 
 const toggleMenu = (id) => {
     const menu = document.getElementById(id);
-	menu.style.display =
-	menu.style.display == "none" ? "block" : "none";
+	menu.classList.toggle('active')
 }
 
 function createSongList(data) {
