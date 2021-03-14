@@ -350,7 +350,7 @@ section {
 	color: inherit;
 	border-bottom: 0.5rem solid var(--color-text);
 	display: grid;
-	grid-template-columns: 2fr 2fr;
+	grid-template-columns: repeat(2, 1fr);
 	max-width: 90rem;
 	margin: 4rem auto 0;
 }
@@ -371,14 +371,13 @@ section {
 }
 
 .gallery {
-	overflow: hidden;
 	color: var(--color-main-dark);
-	max-width: 130rem;
+	text-align: center;
 }
-
 
 .gallery__container {
 	margin: 5rem auto;
+	max-width: 90rem;
 }
 video {
 	display: block;
@@ -386,9 +385,9 @@ video {
 }
 
 @media only screen and (min-width: 65em) {
-	.gallery {
+	.gallery__container {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-auto-flow: column dense;
 	}
 }
 .section__song-list {
@@ -398,7 +397,8 @@ video {
 }
 
 .song__lists {
-	margin: 5rem 0;
+	max-width: 90rem;
+	margin: 5rem auto;
 	border-top: 0.5rem solid var(--color-text);
 }
 
