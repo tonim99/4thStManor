@@ -37,6 +37,9 @@ html {
 	background-color: var(--color-main-dark);
 	color: var(--color-text);
 }
+a, i {
+	cursor: pointer;
+}
 
 :link,
 :visited {
