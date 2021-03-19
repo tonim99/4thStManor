@@ -1,3 +1,5 @@
+const topBtn = document.getElementsByClassName('.top-btn')
+
 const songs = [
 	{
 		title: 'Over You',
