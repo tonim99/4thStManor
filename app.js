@@ -4,7 +4,7 @@ const songs = [
 		artist: 'Beth Hart',
 	},
 	{
-		title: 'I\'m the Only One',
+		title: "I'm the Only One",
 		artist: 'Melissa Etheridge',
 	},
 	{
@@ -104,7 +104,7 @@ const songs = [
 		artist: 'The Beatles',
 	},
 	{
-		title: 'Don\'t Think Twice, It\'s All Right',
+		title: "Don't Think Twice, It's All Right",
 		artist: 'Bob Dylan',
 	},
 	{
@@ -155,23 +155,23 @@ const events = [
 ];
 
 const toggleMenu = (id) => {
-    const menu = document.getElementById(id);
+	const menu = document.getElementById(id);
 	menu.classList.toggle('active')
-}
+};
 
 function createSongList(data) {
 	const songList = document.getElementById('song__lists');
 	songs.forEach((song) => {
-		const songDiv = document.createElement('div')
-		const titleDiv = document.createElement('div')
+		const songDiv = document.createElement('div');
+		const titleDiv = document.createElement('div');
 		const artistDiv = document.createElement('div');
 		songDiv.classList.add('song');
-		titleDiv.classList.add('title')
-		artistDiv.classList.add('artist')
-		songDiv.appendChild(titleDiv)
-		songDiv.appendChild(artistDiv)
-		titleDiv.innerHTML = song.title
-		artistDiv.innerHTML = song.artist
+		titleDiv.classList.add('title');
+		artistDiv.classList.add('artist');
+		songDiv.appendChild(titleDiv);
+		songDiv.appendChild(artistDiv);
+		titleDiv.innerHTML = song.title;
+		artistDiv.innerHTML = song.artist;
 		songList.appendChild(songDiv);
 	});
 }
