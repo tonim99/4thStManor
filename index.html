@@ -94,18 +94,36 @@
             <div class="song__lists" id='song__lists'>
             </div>
         </section>
-        <footer class="footer" id="footer">
+        <section class="contact" id="contact">
             <h3 class="heading__third">Contact Us</h3>
-            <ul class="contact">
-                <li class="contact__links">
-                    Email: 
-                    <a href="mailto:4thStManor@gmail.com" class="link">4thStManor@gmail.com</a>
-                </li>
-                <li class="contact__links">
-                    Call: 
-                    <a href="tel:813-494-4709" class="link">(813)494-4709</a>
-                </li>
-            </ul>
+            <div class="contact__container">
+                <div class="left">
+                    <ul class="contact">
+                        <li class="contact__links">
+                            Email:
+                            <a href="mailto:4thStManor@gmail.com" class="link">4thStManor@gmail.com</a>
+                        </li>
+                        <li class="contact__links">
+                            Call:
+                            <a href="tel:813-494-4709" class="link">(813)494-4709</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <label for="msg">Message</label>
+                        <textarea type="msg" id="msg"></textarea>
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="footer">
+           
         </footer>
         <script src="app.js"></script>
     </body>

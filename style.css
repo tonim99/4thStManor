@@ -415,19 +415,22 @@ video {
 	margin: 0 auto;
 }
 
-.footer {
-	height: 25rem;
-	padding: 5rem;
-	text-align: center;
-}
 .heading__third {
 	font-family: var(--font-cursive);
 	color: var(--color-main-dark);
 	font-size: 5rem;
+	text-align: center;
+}
+
+.contact__container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin-top: 8rem;
 }
 
 .contact {
 	list-style: none;
+	font-family: var(--font-main);
 	color: var(--color-main-dark);
 	font-size: 2rem;
 	line-height: 3rem;
@@ -441,6 +444,40 @@ video {
 
 .link:hover {
 	text-decoration: underline;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: 1px solid var(--color-main-dark);
+	border-radius: 1rem;
+	padding: 10rem 20rem;
+	background: var(--gradient-opaque);
+}
+
+input {
+	padding: 1rem 2rem;
+	margin: 1rem;
+}
+
+textarea {
+	padding: 2rem 4rem;
+	margin: 1rem;
+}
+
+.btn {
+	background-color: var(--color-main-dark);
+	color: var(--color-text);
+	padding: 1rem 2rem;
+	margin: 1rem;
+	border-radius: 1rem;
+	border: 0;
+}
+.footer {
+	height: 25rem;
+	padding: 5rem;
+	text-align: center;
 }
 
 @keyframes fadeInRight {
