@@ -420,6 +420,7 @@ video {
 	padding: 5rem;
 	text-align: center;
 }
+
 .heading__third {
 	font-family: var(--font-cursive);
 	color: var(--color-main-dark);
@@ -427,6 +428,7 @@ video {
 }
 
 .contact {
+	font-family: var(--font-main);
 	list-style: none;
 	color: var(--color-main-dark);
 	font-size: 2rem;
