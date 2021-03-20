@@ -143,13 +143,13 @@ section {
 .navigation__dropdown {
 	background-image: var(--gradient-opaque);
 	width: 100%;
-	height: 0;
+	height: 0%;
 	opacity: 0;
 	z-index: 100;
 	position: fixed;
-	top: 0%;
-	right: 0%;
-	transition: height ease .4s;
+	top: 0;
+	right: 0;
+	transition: all ease .4s;
 }
 
 .navigation__dropdown.active {
@@ -457,10 +457,7 @@ video {
 	height: 8rem;
 	padding: 0;
 	margin: 0;
-	position: absolute;
 	width: 100%;
-	bottom: 0;
-	left: 0;
 	background-color: var(--color-main-dark);
 	color: var(--color-text);
 	font-family: var(--font-main);
