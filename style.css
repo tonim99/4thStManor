@@ -154,11 +154,13 @@ section {
 	transition: all ease .4s;
 	display: flex;
 	justify-content: center;
+	pointer-events: none;
 }
 
 .navigation__dropdown.active {
 	height: 100vh; 
 	opacity: 1;
+	pointer-events: auto;
 }
 
 .navigation__link-container {
