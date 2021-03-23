@@ -127,7 +127,6 @@ const events = [
 	{
 		date: 'April 6, 2021',
 		time: '7:00 pm',
-		venue: 'The Lodge at Old Trail',
 		public: 'Private Event',
 	},
 	{
@@ -139,7 +138,6 @@ const events = [
 	{
 		date: 'August 10, 2021',
 		time: '7:00 pm',
-		venue: 'The Lodge at Old Trail',
 		public: 'Private Event',
 	},
 	{
@@ -151,7 +149,6 @@ const events = [
 	{
 		date: 'November 9, 2021',
 		time: '7:00 pm',
-		venue: 'The Lodge at Old Trail',
 		public: 'Private Event',
 	},
 ];
@@ -191,7 +188,9 @@ function createEventList(data) {
 		eventDiv.appendChild(dateDiv);
 		eventDiv.appendChild(venueDiv);
 		dateDiv.innerHTML = event.date + '<br>' + event.time;
-		venueDiv.innerHTML = event.venue + '<br>' + event.public;
+		!event.venue
+			? (venueDiv.innerHTML = event.public)
+			: (venueDiv.innerHTML = event.venue + '<br>' + event.public);
 		eventList.appendChild(eventDiv);
 	});
 }
