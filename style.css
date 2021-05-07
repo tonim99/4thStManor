@@ -295,7 +295,7 @@ section {
 
 .about__content {
 	color: var(--color-main-dark);
-	text-align: center;
+	text-align: left;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -333,20 +333,22 @@ section {
 	display: flex;
 	flex-direction: column;
 	margin: 2rem 0;
-	background-color: rgba(3, 10, 75, 0.75);
-	background-image: linear-gradient(rgba(3, 10, 75, 0.1), rgba(3, 10, 75, 0.95));
+	background-image: linear-gradient( to right bottom, rgba(3, 10, 75, 0.75), rgba(3, 10, 75, 0.95));
 }
 
 @media only screen and (min-width: 60em) {
 	.about__bio {
 		flex-direction: row;
 	}
+
 	.about__content {
 		text-align: left;
 	}
+
 	.about__text {
 		padding: 2rem;
 	}
+
 	.img__container {
 		flex-basis: 100%;
 	}
@@ -356,9 +358,10 @@ section {
 	font-family: var(--font-main);
 	font-size: 1.8rem;
 	color: var(--color-text);
-	align-self: center;
+	padding: 2rem;
 	line-height: 3rem;
 }
+
 .img__container {
 	align-self: center;
 	height: 90%;
