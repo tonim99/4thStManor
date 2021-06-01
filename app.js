@@ -122,12 +122,12 @@ const songs = [
 ];
 
 const events = [
-	{
-		date: 'April 6, 2021',
-		time: '7:00 pm',
-		venue: 'The Lodge at Old Trail',
-		public: 'Private Event',
-	},
+	// {
+	// 	date: 'April 6, 2021',
+	// 	time: '7:00 pm',
+	// 	venue: 'The Lodge at Old Trail',
+	// 	public: 'Private Event',
+	// },
 	{
 		date: 'July 15, 2021',
 		time: '6:00 pm',

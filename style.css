@@ -212,12 +212,6 @@ section {
 }
 .btn {
 	transition: var(--smooth-transition);
-}
-
-.btn:link,
-.btn:visited {
-	padding: 1.25rem 3.5rem;
-	display: inline-block;
 	border-radius: 1rem;
 }
 
@@ -235,6 +229,8 @@ section {
 	color: var(--color-main-dark);
 	font-size: 1.75rem;
 	font-family: var(--font-main);
+	padding: 1.25rem 3.5rem;
+	display: inline-block;
 }
 @media only screen and (min-width: 60em) {
 	.header__text-box {
@@ -466,12 +462,11 @@ textarea {
 	margin: 1rem;
 }
 
-.btn {
+.btn--blue {
 	background-color: var(--color-main-dark);
 	color: var(--color-text);
 	padding: 1rem 2rem;
 	margin: 1rem;
-	border-radius: 1rem;
 	border: 0;
 }
 .footer {
