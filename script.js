@@ -129,21 +129,27 @@ const events = [
 	// 	time: '7:00 pm',
 	// 	public: 'Private Event',
 	// },
+	// {
+	// 	date: 'July 15, 2021',
+	// 	time: '6:00 pm',
+	// 	venue: 'Greencroft Club',
+	// 	public: 'Open to the Public',
+	// },
+	// {
+	// 	date: 'August 10, 2021',
+	// 	time: '7:00 pm',
+	// 	public: 'Private Event',
+	// },
 	{
-		date: 'July 15, 2021',
+		date: 'September 23, 2021',
 		time: '6:00 pm',
 		venue: 'Greencroft Club',
 		public: 'Open to the Public',
 	},
 	{
-		date: 'August 10, 2021',
+		date: 'October 2, 2021',
 		time: '7:00 pm',
-		public: 'Private Event',
-	},
-	{
-		date: 'September 23, 2021',
-		time: '6:00 pm',
-		venue: 'Greencroft Club',
+		venue: 'Benny Stivale\'s',
 		public: 'Open to the Public',
 	},
 	{
