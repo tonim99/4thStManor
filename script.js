@@ -140,12 +140,12 @@ const events = [
 	// 	time: '7:00 pm',
 	// 	public: 'Private Event',
 	// },
-	{
-		date: 'September 23, 2021',
-		time: '6:00 - 8:00 p.m.',
-		venue: 'Greencroft Club',
-		public: 'Open to the Public',
-	},
+	// {
+	// 	date: 'September 23, 2021',
+	// 	time: '6:00 - 8:00 p.m.',
+	// 	venue: 'Greencroft Club',
+	// 	public: 'Open to the Public',
+	// },
 	{
 		date: 'October 2, 2021',
 		time: '7:00 - 11:00 p.m.',
